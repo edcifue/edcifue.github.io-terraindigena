@@ -1,0 +1,11 @@
+name: "terraindigena"
+output_dir: "docs"
+navbar:
+  title: "Indigenous Lands Brazil"
+  left:
+    - text: "Update 20220913"
+      href: index.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
