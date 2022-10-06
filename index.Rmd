@@ -53,6 +53,7 @@ Also, you can explore the layers in this GEE app, here:
 
 https://fercholis.users.earthengine.app/view/terraindigenavisual
 
+<br>
 
 # First batch (for matching analysis)
 
@@ -63,6 +64,8 @@ Layers, table and script to make the table are in this folder:
 https://drive.google.com/drive/folders/1GEy39jdoKdShx4gk2dTxjuOvETq4xJHR
 
 Here is a more detailed explanation of each layer:
+
+<br>
 
 ### Indigenous Lands
 
@@ -193,6 +196,8 @@ legend('bottomleft', legend = biocol$BIOME_NAME[c(1,2,7,9,14)], fill = biocol$CO
 
 Here I reclassified values from mapbiomas transition layers in collection v3.1 and collection v6 for each year. Additionally, I did the same for a single transition layer from the beginning to the end of the study period (i.e., 1985 to 2017 for collection v3.1 and 1985 to 2020 for collection v6). 
 
+<br>
+
 ### reclassification
 
 Then I defined three types of transitions: 1) natural to natural (remain), 2) natural to transformed (transf) and 3) water (in case we need to exclude pixels having more water than land). All other transitions types were masked (see table below). Each reclassified pixel was multiplied by its area and then aggregated to the 1-km. So, there are 1-km layers of the area for each reclassified transition per year. 
@@ -213,7 +218,11 @@ legend('topleft', legend = c('transformed','remain','water'), fill = c('red','gr
 
 I think the idea is to get the proportion of natural land being transformed as our response variable or the opposite. Then we can fit a logistic regression in the post-matching analysis.
 
+<br>
+
 ### option 1: proportion of transformed natural land
+
+<br>
 
 $$  {Response\ variable} =  \frac{transformed} {transformed + remain} $$
 
@@ -225,6 +234,8 @@ plot(pch61, col=rev(hcl.colors(100,'BurgYl')), main='Proportion of transformed n
 
 ### option 2: proportion of transformed natural land
 
+<br>
+
 $$ {Response\ variable} =  \frac{remain} {transformed + remain} $$
 
 ```{r}
@@ -235,6 +246,8 @@ plot(pch62, col=rev(hcl.colors(100,'BurgYl')), main='Proportion of remaining nat
 
 ## Mapbiomas Transition codes
 
+<br>
+
 ### MapBiomas land-use codes
 
 Land use classification of map biomas are specified in the following images.
@@ -242,6 +255,8 @@ Land use classification of map biomas are specified in the following images.
 ```{r, echo=FALSE,out.width="49%", out.height="20%",fig.cap="caption",fig.show='hold',fig.align='center'}
 knitr::include_graphics(c("~/github/terraindigena/images/mapbiomas_codes_3.png","~/github/terraindigena/images/mapbiomas_codes_6.png"))
 ```
+
+<br>
 
 ### MapBiomas transition codes
 
@@ -265,6 +280,8 @@ Exemplo:
 1524 = pastagem que foi convertida para infraestrutura urbana
 
 
+<br>
+
 ### Reclassified transitions
 
 The following tables shows the transition type and the reclassified transition 
@@ -278,6 +295,8 @@ The following tables shows the transition type and the reclassified transition
  - exclude: all other types of transitions.
 
 
+<br>
+
 #### Transition table collection 3.1
 
 ```{r}
@@ -287,6 +306,8 @@ trans3 <-read.csv("./data/MAPBIOMAS-EXPORT/mapbiomas-31-transition-codes-reclass
 DT::datatable(trans3, class="cell-border stripe",rownames = F,filter="top",extensions = "Buttons",options = list(
   pageLength = 20,autoWidth=T,dom="Blfrtip",buttons=c('copy', 'csv', 'excel', 'pdf')))
 ```
+
+<br>
 
 #### Transition table collection 6
 

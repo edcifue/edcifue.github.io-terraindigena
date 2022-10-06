@@ -92,11 +92,17 @@ fig.buff <- function(collection) {
 
 Here are some updates after getting the layers for the matching analysis.The main aim here is to modify Fig 5 which compares ILs with their buffers, but instead compare ILs with controls from the matching analysis. In the original analysis, buffers excluded neighboring ILs, but the reviewers suggested to also exclude Protected Areas (PAs). Then, besides preparing and extracting the data for the matching pairs (IL-controls), data for each buffer was extracted again but now excluding PAs.
 
+<br>
+
 # Data preparation
 
 Layers from mapbiomas (collection 3 and 6) and relevant variables (ie, accessibility to cities, distance to roads, human population density, biome type, and PAs) were resampled to 1-km resolution images masked for the 'legal Amazon'. Then, data for each 1-km grid (ie, pixel) was extracted for all layers excluding PAs and selecting only the the pixels having 80% of natural vegetation cover at the start of the time period (ie, 1985). Natural cover was calculated from the re-classified transitions shown in the previous tab. Since we are using transition layers of mapbiomas (not the land cover layers), natural vegetation cover is the sum of two transitions: what remained natural plus what was transformed from natural. Then, natural vegetation cover in each 1-km pixel was divided by its area (which varies slightly from 1) to get the proportion.
 
+<br>
+
 $$ {Proportion\ of\ natural\ land} =  \frac{transformed + remain}{area}  $$
+<br>
+
 
 In the case of buffers, mapbiomas data was extracted again for each of them. Then, there are data for two types of buffers: 
 
@@ -143,13 +149,17 @@ After filtering out pixels in PAs and having less than 80% cover, the table was 
 
 The resulting control pixels are ..... and this and that.
 
+<br>
 
 # Aggregates by IL
 
 Mapbiomas data were aggregated for each IL, its respective matched control and buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in previous tab:
 
+<br>
+
 $$ {Percentage\ of\ natural\ vegetation\ loss} =  \frac{transformed} {transformed + remain} *100 $$
 
+<br>
 
 # Figure 5: Boxplots
 
@@ -158,6 +168,8 @@ This is the original figure:
 ![](~/github/terraindigena/images/Fig_5.png)
 
 Data was extracted from mapbiomas collection 3 (same as the original methodology, up to 2017) and collection 6 (up to 2020). Besides having data for both collections, there are three options for this figure:
+
+<br>
 
 ## Option 1 {.tabset .tabset-pills .tabset-fade}
 
@@ -169,15 +181,21 @@ Add another panel comparing ILs and their controls, but I'm less convinced with 
 fig.match(collection = 3)
 ```
 
+<br>
+
 ### Collection 6
 
 ```{r}
 fig.match(collection = 6)
 ```
 
+<br>
+
 ## Option 2 {.tabset .tabset-pills .tabset-fade}
 
 2) Replace the figure with a new one having ILs, controls, and buffers:
+
+<br>
 
 ### Collection 3
 
@@ -185,11 +203,15 @@ fig.match(collection = 6)
 fig.buff(collection = 3)
 ```
 
+<br>
+
 ### Collection 6
 
 ```{r}
 fig.buff(collection = 6)
 ```
+
+<br>
 
 ## Option 3 
 
