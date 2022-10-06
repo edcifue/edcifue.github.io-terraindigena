@@ -13,7 +13,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_chunk$set(warning=FALSE)
 knitr::opts_chunk$set(message=FALSE)
-knitr::opts_chunk$set(cache = TRUE)
+knitr::opts_chunk$set(cache = FALSE)
 knitr::opts_knit$set(root.dir = '~/Rproj/Rproj/01_terra_indigena/')
 
 ```
@@ -31,6 +31,7 @@ fig.match <- function(collection) {
   # (atlnv <- atbx[1:8*2]+d/2)
   (atnam <- atbx[1:9*2-1] + diff(atbx)[1:9*2-1]/2)
   (nn <- unique(y0$UFm)[c(1:3,8,4:7,9)])
+  pal <- c('purple','darkgoldenrod')
   
   if(collection==3) plot(NA, xlim=range(atbx), ylim=range(y0$transf3/y0$natland3*100), xaxt="n",
                          xlab= '', ylab= 'Percent of natural vegtation area lost\nover the period 1985-2017', las=1)
@@ -45,14 +46,13 @@ fig.match <- function(collection) {
   abline(h=0:8*10, col='lightgrey', lty='dotted')
   # abline(v=atlnv[5], col='red')
   
-  if(collection==3) boxplot(y0$transf3/y0$natland3*100 ~ y0$trt*y0$UFn, col=c('purple','darkgoldenrod'), xaxt="n", yaxt="n",
+  if(collection==3) boxplot(y0$transf3/y0$natland3*100 ~ y0$trt*y0$UFn, col=pal, xaxt="n", yaxt="n",
                             boxwex=.9, boxlwd=.6, medlwd=1.2, whisklty=1, staplelty=0, outpch=8, outcex=.2,
                             at = atbx, add=T)
-  if(collection==6) boxplot(y0$transf6/y0$natland6*100 ~ y0$trt*y0$UFn, col=c('purple','darkgoldenrod'), xaxt="n", yaxt="n",
+  if(collection==6) boxplot(y0$transf6/y0$natland6*100 ~ y0$trt*y0$UFn, col=pal, xaxt="n", yaxt="n",
                             boxwex=.9, boxlwd=.6, medlwd=1.2, whisklty=1, staplelty=0, outpch=8, outcex=.2,
                             at = atbx, add=T)
-  legend('topleft', legend = c('Indigenous Lands', 'Matched control (non-PA)'), fill = c('purple','darkgoldenrod'), bty = 'n')
-  
+  legend('topleft', legend = c('Indigenous Lands', 'Matched control (non-PA)'), fill = pal, bty = 'n')
 }
 
 # function: figure adding buffers
@@ -64,6 +64,7 @@ fig.buff <- function(collection) {
   # (atlnv <- atbx[1:17*4]+d/2)
   (atnam <- atbx[1:9*4-1] - diff(atbx)[1:9*2-1]/2)
   (nn <- unique(y0$UFm)[c(1:3,8,4:7,9)])
+  pal <- c('purple','orange','yellow','blue')
   
   if(collection==3) plot(NA, xlim=range(atbx), ylim=range(y$transf3/y$natland3*100, na.rm = T), xaxt="n",
                          xlab= '', ylab= 'Percent of natural vegtation area lost\nover the period 1985-2017', las=1)
@@ -79,13 +80,13 @@ fig.buff <- function(collection) {
   abline(h=0:8*10, col='lightgrey', lty='dotted')
   # abline(v=atlnv[5], col='red')
   
-  if(collection==3) boxplot(y$transf3/y$natland3*100 ~ y$trt*y$UFn, col=c('purple','yellow', 'orange','blue'), xaxt="n", yaxt="n",
+  if(collection==3) boxplot(y$transf3/y$natland3*100 ~ y$trt*y$UFn, col=pal, xaxt="n", yaxt="n",
                             boxwex=.9, boxlwd=.6, medlwd=1.2, whisklty=1, staplelty=0, outpch=8, outcex=.2,
                             at = atbx, add=T)
-  if(collection==6) boxplot(y$transf6/y$natland6*100 ~ y$trt*y$UFn, col=c('purple','yellow', 'orange','blue'), xaxt="n", yaxt="n",
+  if(collection==6) boxplot(y$transf6/y$natland6*100 ~ y$trt*y$UFn, col=pal, xaxt="n", yaxt="n",
                             boxwex=.9, boxlwd=.6, medlwd=1.2, whisklty=1, staplelty=0, outpch=8, outcex=.2,
                             at = atbx, add=T)
-  legend('topleft',legend = c('Indigenous Lands','Matched control (non-PA)','10-km Buffer','10-km Buffer (non-PA)'),fill = c('purple','yellow', 'orange','blue'),bty = 'n')
+  legend('topleft',legend = c('Indigenous Lands','Matched control (non-PA)','10-km Buffer','10-km Buffer (non-PA)'),fill = pal,bty = 'n')
 }
 
 ```
