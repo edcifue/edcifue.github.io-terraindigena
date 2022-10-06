@@ -286,7 +286,7 @@ Exemplo:
 
 The following tables shows the transition type and the reclassified transition 
  
- - exclude: natural to natural
+ - remain: natural to natural
  
  - transformed: natural to transformed
  

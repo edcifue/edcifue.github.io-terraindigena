@@ -397,6 +397,7 @@ div.tocify {
 <li><p>only excluding neighboring ILs, as in the original methodology.</p></li>
 <li><p>excluding PAs as well.</p></li>
 </ol>
+<p><br></p>
 <p>An important difference now compared to the original methodology, is that the basic data units are pixels, even though they’re aggregated after for each IL and its respective matching control plus buffers. Therefore, only the pixels having 80% of natural cover were selected (and aggregated after). In the previous analysis, mapbiomas data were not extracted by 1-km pixels but to the whole IL and buffers.</p>
 <p>When excluding PA pixels, some ILs and/or buffers were filtered out as some PAs overlap completely (or partially). There are ILs completely surrounded by PAs and/or other ILs, so the whole buffer would not have any data. When selecting only 80% cover pixels, some other ILs get excluded as well.</p>
 <p>In summary:</p>
@@ -413,25 +414,25 @@ div.tocify {
 </div>
 <div id="matching-analysis" class="section level1">
 <h1>Matching analysis</h1>
-<p>After filtering out pixels in PAs and having less than 80% cover, the table was ready for the matching analysis. For each IL pixel, this analysis matches another pixel under similar characteristics outside the IL. The characteristics (ie, variables) we used are:</p>
+<p>After filtering out pixels in PAs and having less than 80% cover, the matching analysis was performed. This analysis ‘matches’ each IL pixel to another pixel outside the IL having similar characteristics (controls). The characteristics (ie, variables) we used were:</p>
 <ol style="list-style-type: decimal">
 <li><p>accessibility to cities</p></li>
 <li><p>distance to roads</p></li>
 <li><p>human population density</p></li>
 <li><p>biome type</p></li>
 </ol>
-<p>The resulting control pixels are ….. and this and that.</p>
+<p>In general, the matching analysis performed well. Further explanation can be found in the SI draft document for matching: <a href="https://docs.google.com/document/d/1TWO7DNBtaVaVz-APYbrcHKF55ObNhmby" class="uri">https://docs.google.com/document/d/1TWO7DNBtaVaVz-APYbrcHKF55ObNhmby</a>.</p>
 <p><br></p>
 </div>
 <div id="aggregates-by-il" class="section level1">
 <h1>Aggregates by IL</h1>
-<p>Mapbiomas data were aggregated for each IL, its respective matched control and buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in previous tab:</p>
+<p>Mapbiomas data were aggregated for each IL, its respective matched control and its buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in previous Update tab (see the very top of this website):</p>
 <p><br></p>
 <p><span class="math display">\[ {Percentage\ of\ natural\ vegetation\ loss} =  \frac{transformed} {transformed + remain} *100 \]</span></p>
 <p><br></p>
 </div>
 <div id="figure-5-boxplots" class="section level1">
-<h1>Figure 5: Boxplots</h1>
+<h1>Figure 5: boxplots</h1>
 <p>This is the original figure:</p>
 <p><img src="images/Fig_5.png" /></p>
 <p>Data was extracted from mapbiomas collection 3 (same as the original methodology, up to 2017) and collection 6 (up to 2020). Besides having data for both collections, there are three options for this figure:</p>
