@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Update 20220913"
       href: index.html
+    - text: "Update 2 20221005"
+      href: Update_20221005.html
 output:
   html_document:
     theme: cosmo
