@@ -3,11 +3,13 @@ output_dir: "docs"
 navbar:
   title: "Indigenous Lands Brazil"
   left:
-    - text: "Update 20220913"
+    - text: "Update 1"
       href: index.html
-    - text: "Update 2 20221005"
+    - text: "Update 2"
       href: Update_20221005.html
 output:
   html_document:
     theme: cosmo
     highlight: textmate
+    # number_sections: TRUE
+    # secnumdepth: 1
