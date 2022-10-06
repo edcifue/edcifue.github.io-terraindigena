@@ -409,7 +409,7 @@ div.tocify {
 ##  73 %</code></pre>
 <pre><code>## Buffer pixels excluded by other ILs and PAs:
 ##  80 %</code></pre>
-<p>Note that working with buffers can be problematic because a great fraction of IL borders are tangent to another IL. More than 2/3 of buffer area is excluded by other ILs. Also note that PAs only excludes 7% extra in buffers. Inside ILs, PAs overlap 10% of ILs.</p>
+<p>Note that working with buffers can be problematic because a great fraction of IL borders are tangent to another IL. More than 2/3 of buffer area is excluded by other ILs. Also note that PAs only excludes 7% of buffer area additional to neighboring ILs. PAs overlap 10% of general ILs area.</p>
 <p><br></p>
 </div>
 <div id="matching-analysis" class="section level1">
@@ -427,7 +427,7 @@ div.tocify {
 </div>
 <div id="aggregates-by-il" class="section level1">
 <h1>Aggregates by IL</h1>
-<p>Mapbiomas data were aggregated for each IL, its respective matched control and its buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in previous Update tab (see the very top of this website):</p>
+<p>Mapbiomas data were aggregated for each IL, its respective matched control and its buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in the previous Update tab (see header of this website):</p>
 <p><br></p>
 <p><span class="math display">\[ {Percentage\ of\ natural\ vegetation\ loss} =  \frac{transformed} {transformed + remain} *100 \]</span></p>
 <p><br></p>
@@ -440,7 +440,7 @@ div.tocify {
 <p><br></p>
 <div id="option-1" class="section level2 tabset tabset-pills tabset-fade">
 <h2 class="tabset tabset-pills tabset-fade">Option 1</h2>
-<p>Add another panel comparing ILs and their controls, but I’m less convinced with this option because IL boxplots are not same as the original figure (see above) because all of the exclusions (ie, PAs and 80% cover).</p>
+<p>Add another panel comparing ILs and their controls, but I’m less convinced with this option because IL boxplots are not same as in the original figure. This might be due to all the exclusions (ie, PAs and 80% cover).</p>
 <div id="collection-3" class="section level3">
 <h3>Collection 3</h3>
 <p><img src="Update_20221005_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
@@ -455,7 +455,7 @@ div.tocify {
 <div id="option-2" class="section level2 tabset tabset-pills tabset-fade">
 <h2 class="tabset tabset-pills tabset-fade">Option 2</h2>
 <ol start="2" style="list-style-type: decimal">
-<li>Replace the figure with a new one having ILs, controls, and buffers:</li>
+<li>Replace the figure with a new one comparing ILs to controls and buffers:</li>
 </ol>
 <p><br></p>
 <div id="collection-3-1" class="section level3">

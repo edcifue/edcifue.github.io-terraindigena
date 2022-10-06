@@ -132,7 +132,7 @@ cat('Buffer pixels excluded by other ILs and PAs:\n',round((ILsum[4]-ILsum[6])/I
 
 ```
 
-Note that working with buffers can be problematic because a great fraction of IL borders are tangent to another IL. More than 2/3 of buffer area is excluded by other ILs. Also note that PAs only excludes 7% extra in buffers. Inside ILs, PAs overlap 10% of ILs.
+Note that working with buffers can be problematic because a great fraction of IL borders are tangent to another IL. More than 2/3 of buffer area is excluded by other ILs. Also note that PAs only excludes 7% of buffer area additional to neighboring ILs. PAs overlap 10% of general ILs area.
 
 <br>
 
@@ -156,7 +156,7 @@ https://docs.google.com/document/d/1TWO7DNBtaVaVz-APYbrcHKF55ObNhmby.
 
 # Aggregates by IL
 
-Mapbiomas data were aggregated for each IL, its respective matched control and its buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in previous Update tab (see the very top of this website):
+Mapbiomas data were aggregated for each IL, its respective matched control and its buffers. The response variable in each of them, is the proportion of natural vegetation loss, which is calculated as in option 1 in the previous Update tab (see header of this website):
 
 <br>
 
@@ -176,7 +176,7 @@ Data was extracted from mapbiomas collection 3 (same as the original methodology
 
 ## Option 1 {.tabset .tabset-pills .tabset-fade}
 
-Add another panel comparing ILs and their controls, but I'm less convinced with this option because IL boxplots are not same as the original figure (see above) because all of the exclusions (ie, PAs and 80% cover).
+Add another panel comparing ILs and their controls, but I'm less convinced with this option because IL boxplots are not same as in the original figure. This might be due to all the exclusions (ie, PAs and 80% cover).
 
 ### Collection 3
 
@@ -196,7 +196,7 @@ fig.match(collection = 6)
 
 ## Option 2 {.tabset .tabset-pills .tabset-fade}
 
-2) Replace the figure with a new one having ILs, controls, and buffers:
+2) Replace the figure with a new one comparing ILs to controls and buffers:
 
 <br>
 
