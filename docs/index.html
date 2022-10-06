@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Edgar Cifuentes" />
+
+
+<title>Update 1 terra indigena</title>
+
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.17/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Indigenous Lands Brazil</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Update 1</a>
+</li>
+<li>
+  <a href="Update_20221005.html">Update 2</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Update 1 terra indigena</h1>
+<h4 class="author">Edgar Cifuentes</h4>
+<h4 class="date">13/09/2022</h4>
+
+</div>
+
+
+<p>Hi there, Here I’ll explain what I’ve done so far. I used Google Earth Engine (GEE) to compute layers at 1km resolution. I already sent in a google drive the first batch of layers, which were for getting the table ready for the matching analysis. Now, the second batch of layers are from mapbiomas collections to get reclassified land-use transitions per year: 1) natural to natural, 2) natural to transformed and 3) water. Below, I will go into more detail of each batch of layers.</p>
+<p>Also, you can explore the layers in this GEE app, here:</p>
+<p><a href="https://fercholis.users.earthengine.app/view/terraindigenavisual" class="uri">https://fercholis.users.earthengine.app/view/terraindigenavisual</a></p>
+<div id="first-batch-for-matching-analysis" class="section level1">
+<h1>First batch (for matching analysis)</h1>
+<p>The first batch, and a recap from my last email, I created 1km-layers for the matching analysis. We decided to have few layers to match control pixels for the ones inside Indigenous Lands (IL). These layers are based on known factors affecting deforestation such as accessibility, distance to roads, human population density, biome. We also decided to exclude Conservation Units (CU) from the analysis to follow the reviewer’s comment on protected areas. Then, I created a table where each row has the pixel id, coordinates, and values for each layer.</p>
+<p>Layers, table and script to make the table are in this folder:</p>
+<p><a href="https://drive.google.com/drive/folders/1GEy39jdoKdShx4gk2dTxjuOvETq4xJHR" class="uri">https://drive.google.com/drive/folders/1GEy39jdoKdShx4gk2dTxjuOvETq4xJHR</a></p>
+<p>Here is a more detailed explanation of each layer:</p>
+<div id="indigenous-lands" class="section level3">
+<h3>Indigenous Lands</h3>
+<p>For this layer, the pixel is either the id code of the Indigenous land or 0. I called the IL polygons directly from the mapbiomas project in GEE and then transformed it into a 1-km raster.</p>
+<p><img src="index_files/figure-html/IL%20layer-1.png" width="672" /></p>
+</div>
+<div id="conservation-units-4-layers" class="section level3">
+<h3>Conservation Units (4 layers)</h3>
+<p>These layers had the same procedure as IL. The pixel is either the id code of the CU or 0. I There are four CU datasets in mapbiomas project in GEE: 1) Federal Integral, 2) Federal Sustainable Use, 3) State Integral, 2) State Sustainable Use. There are individual 1-km layers for each CU type, but I masked them all out indiscriminately for the analysis.</p>
+<p><img src="index_files/figure-html/CU%20layer-1.png" width="672" /></p>
+</div>
+<div id="accessibility-to-cities-2015" class="section level3">
+<h3>Accessibility to cities (2015)</h3>
+<p>This layer comes from the Malaria Atlas Project et al. It is now deprecated as they created a new one in 2019 (see next layer). They calculated the time to travel to a populated area based on existing roads, rivers, topography, etc., by creating a friction map (e.g., moving through a road is faster than walking through the jungle).</p>
+<p><a href="https://explorer.earthengine.google.com/#detail/Oxford%2FMAP%2Faccessibility_to_cities_2015_v1_0" class="uri">https://explorer.earthengine.google.com/#detail/Oxford%2FMAP%2Faccessibility_to_cities_2015_v1_0</a></p>
+<p><strong>Citation</strong></p>
+<p>D.J. Weiss, A. Nelson, H.S. Gibson, W. Temperley, S. Peedell, A. Lieber, M. Hancher, E. Poyart, S. Belchior, N. Fullman, B. Mappin, U. Dalrymple, J. Rozier, T.C.D. Lucas, R.E. Howes, L.S. Tusting, S.Y. Kang, E. Cameron, D. Bisanzio, K.E. Battle, S. Bhatt, and P.W. Gething. A global map of travel time to cities to assess inequalities in accessibility in 2015. Nature (2018). (<a href="doi:10.1038/nature25181" class="uri">doi:10.1038/nature25181</a>)[<a href="https://doi.org/10.1038/nature25181" class="uri">https://doi.org/10.1038/nature25181</a>]</p>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="accessibility-to-healthcare-2019" class="section level3">
+<h3>Accessibility to healthcare (2019)</h3>
+<p>This layer is based on the previous one but now to access the nearest hospital or clinic. Underlying data for the friction map was improved as well.</p>
+<p><a href="https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description" class="uri">https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_accessibility_to_healthcare_2019#description</a></p>
+<p><strong>Citation</strong></p>
+<p>D.J. Weiss, A. Nelson, C.A. Vargas-Ruiz, K. Gligorić, S. Bavadekar, E. Gabrilovich, A. Bertozzi-Villa, J. Rozier, H.S. Gibson, T. Shekel, C. Kamath, A. Lieber, K. Schulman, Y. Shao, V. Qarkaxhija, A.K. Nandi, S.H. Keddie, S. Rumisha, E. Cameron, K.E. Battle, S. Bhatt, P.W. Gething. Global maps of travel time to healthcare facilities. Nature Medicine (2020).</p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="distance-to-roads-3-layers" class="section level3">
+<h3>Distance to roads (3 layers)</h3>
+<p>Here there are two shapefiles that Carlos sent: <em>malha_viaria</em> and <em>roads8_dis_sad</em>. I’m not aware of their difference neither their source. We calculated the distance using Alejandro’s script for both shapefiles and for the unified version of both. These are named: <em>dist_malha</em>, <em>dist_roads8</em> and <em>dist_road</em>, respectively.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+<p>IMPORTANT NOTE: I had to export again <em>dist_road</em> because I just found that there was an error when exporting it from GEE (see below), so that is reflected in the table. The re-exported version is correct and I updated the table.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="human-population-density-2015" class="section level3">
+<h3>Human Population Density (2015)</h3>
+<p>This dataset is based on population count from the The Global Human Settlement Layer (GHSL). I selected the year 2015 from available layers for 1975, 1990, 2000, 2015. Then the number of people per pixel was divided by the area of the pixel to get values in terms of [ind/km<sup>2</sup>].</p>
+<p><a href="https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2016_POP_GPW_GLOBE_V1" class="uri">https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2016_POP_GPW_GLOBE_V1</a></p>
+<p><strong>Citation</strong></p>
+<p>European Commission, Joint Research Centre (JRC); Columbia University, Center for International Earth Science Information Network - CIESIN (2015): GHS population grid, derived from GPW4, multitemporal (1975, 1990, 2000, 2015). European Commission, Joint Research Centre (JRC) [Dataset] PID: <a href="https://data.europa.eu/89h/jrc-ghsl-ghs_pop_gpw4_globe_r2015a" class="uri">https://data.europa.eu/89h/jrc-ghsl-ghs_pop_gpw4_globe_r2015a</a></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="biomes" class="section level3">
+<h3>Biomes</h3>
+<p>This layer comes from the RESOLVE Ecoregions dataset. There are 846 terrestrial ecoregions grouped into 14 biomes. I selected biomes for simplicity and transformed the polygons into a 1-km raster.</p>
+<p><a href="https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017#description" class="uri">https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017#description</a></p>
+<p><a href="https://ecoregions2017.appspot.com/" class="uri">https://ecoregions2017.appspot.com/</a></p>
+<p><strong>Citation</strong></p>
+<p>Dinerstein, E., Olson, D., Joshi, A., Vynne, C., Burgess, N. D., Wikramanayake, E., … &amp; Saleem, M. (2017). An ecoregion-based approach to protecting half the terrestrial realm. BioScience, 67(6), 534-545.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+</div>
+<div id="second-batch-mapbiomas-land-use-change" class="section level1">
+<h1>Second batch (mapbiomas land use change)</h1>
+<p>Here I reclassified values from mapbiomas transition layers in collection v3.1 and collection v6 for each year. Additionally, I did the same for a single transition layer from the beginning to the end of the study period (i.e., 1985 to 2017 for collection v3.1 and 1985 to 2020 for collection v6).</p>
+<div id="reclassification" class="section level3">
+<h3>reclassification</h3>
+<p>Then I defined three types of transitions: 1) natural to natural (remain), 2) natural to transformed (transf) and 3) water (in case we need to exclude pixels having more water than land). All other transitions types were masked (see table below). Each reclassified pixel was multiplied by its area and then aggregated to the 1-km. So, there are 1-km layers of the area for each reclassified transition per year.</p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="672" /><img src="index_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
+</div>
+<div id="response-variable" class="section level2">
+<h2>Response variable</h2>
+<p>I think the idea is to get the proportion of natural land being transformed as our response variable or the opposite. Then we can fit a logistic regression in the post-matching analysis.</p>
+<div id="option-1-proportion-of-transformed-natural-land" class="section level3">
+<h3>option 1: proportion of transformed natural land</h3>
+<p><span class="math display">\[  {Response\ variable} =  \frac{transformed} {transformed + remain} \]</span></p>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="option-2-proportion-of-transformed-natural-land" class="section level3">
+<h3>option 2: proportion of transformed natural land</h3>
+<p><span class="math display">\[ {Response\ variable} =  \frac{remain} {transformed + remain} \]</span></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+</div>
+<div id="mapbiomas-transition-codes" class="section level2">
+<h2>Mapbiomas Transition codes</h2>
+<div id="mapbiomas-land-use-codes" class="section level3">
+<h3>MapBiomas land-use codes</h3>
+<p>Land use classification of map biomas are specified in the following images.</p>
+<div class="figure" style="text-align: center">
+<img src="images/mapbiomas_codes_3.png" alt="caption" width="49%" height="20%" /><img src="images/mapbiomas_codes_6.png" alt="caption" width="49%" height="20%" />
+<p class="caption">
+caption
+</p>
+</div>
+</div>
+<div id="mapbiomas-transition-codes-1" class="section level3">
+<h3>MapBiomas transition codes</h3>
+<p>Transition (land change) codes are based on the following information.</p>
+<p><a href="https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR" class="uri">https://mapbiomas.org/colecoes-mapbiomas-1?cama_set_language=pt-BR</a></p>
+<p>Os mapas de transição possuem códigos calculados com a junção do código do primeiro e do segundo ano, conforme a fórmula abaixo:</p>
+<p><span class="math display">\[ (ano1 \times 100) + ano2 \]</span> Exemplo:</p>
+<p>303 = floresta que permaneceu floresta</p>
+<p>315 = floresta que foi convertida para pastagem</p>
+<p>1515 = pastagem que permaneceu pastagem</p>
+<p>1524 = pastagem que foi convertida para infraestrutura urbana</p>
+</div>
+<div id="reclassified-transitions" class="section level3">
+<h3>Reclassified transitions</h3>
+<p>The following tables shows the transition type and the reclassified transition</p>
+<ul>
+<li><p>exclude: natural to natural</p></li>
+<li><p>transformed: natural to transformed</p></li>
+<li><p>water: transition where there was water in the first place.</p></li>
+<li><p>exclude: all other types of transitions.</p></li>
+</ul>
+<div id="transition-table-collection-3.1" class="section level4">
+<h4>Transition table collection 3.1</h4>
+<div id="htmlwidget-4ddeef37968f7f7f4720" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4ddeef37968f7f7f4720">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"303\" data-max=\"3333\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[303,304,305,309,311,312,313,315,319,321,323,324,325,327,330,332,333,403,404,405,411,412,413,415,419,421,424,425,426,427,430,432,433,503,504,505,512,513,521,523,524,525,526,527,532,533,903,909,913,921,925,1103,1104,1111,1112,1113,1115,1119,1121,1124,1125,1127,1133,1203,1204,1205,1211,1212,1213,1215,1219,1221,1223,1224,1225,1226,1227,1230,1232,1233,1303,1304,1305,1309,1311,1312,1313,1315,1319,1321,1323,1324,1325,1326,1327,1330,1332,1333,1503,1504,1505,1509,1511,1512,1513,1515,1519,1521,1524,1525,1526,1527,1530,1532,1533,1903,1904,1912,1913,1915,1919,1921,1924,1925,1927,1930,1933,2103,2104,2105,2109,2111,2112,2113,2115,2119,2121,2123,2124,2125,2126,2127,2130,2132,2133,2303,2305,2313,2321,2323,2324,2325,2327,2332,2333,2403,2404,2405,2409,2412,2413,2415,2419,2421,2423,2424,2425,2426,2427,2430,2432,2433,2503,2504,2505,2509,2511,2512,2513,2515,2519,2521,2523,2524,2525,2526,2527,2530,2532,2533,2604,2605,2612,2615,2621,2625,2632,2703,2704,2705,2709,2711,2712,2713,2715,2719,2721,2723,2724,2725,2726,2727,2730,2732,2733,3003,3004,3009,3012,3013,3015,3019,3021,3024,3025,3027,3030,3033,3203,3204,3205,3212,3213,3221,3223,3224,3225,3226,3227,3232,3233,3303,3304,3305,3309,3311,3312,3313,3315,3319,3321,3323,3324,3325,3327,3330,3332,3333,915,924,930,933,1911,2613,2624,2627,3215,3230,515,423,2411,3032,927,1523,1130,320,1520,2120,2520,409,1920,2020,2021,3320,420,904,1220,2003,2015,2019,2025,1209,1909,2004,2012,2033,2304,2420,2720,919,2024,2027,530,2315,2013,912,2312,1109,911,1120,2619,1926,2011,2326,2623,3011,3026,1320,2009,2630,920],["Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Water","Water","Water","Water","Water","Water","Water","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Temporary Crops (Herbaceas - Agricultura)","Water","Water","Water","Salt flat","Salt flat","Magrove","Savanna Formation","Urban Infrastructure","Mining","Forest Plantation","Pasture","Wetland","Forest Formation","Pasture","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","Savanna Formation","Temporary Crops (Herbaceas - Agricultura)","Sugar Cane","Sugar Cane","River, Lake and Ocean","Savanna Formation","Forest Plantation","Grassland (Pastizal, Formación Herbácea)","Sugar Cane","Sugar Cane","Sugar Cane","Sugar Cane","Grassland (Pastizal, Formación Herbácea)","Temporary Crops (Herbaceas - Agricultura)","Sugar Cane","Sugar Cane","Sugar Cane","Beach and Dune","Urban Infrastructure","Non Observed","Forest Plantation","Sugar Cane","Sugar Cane","Magrove","Beach and Dune","Sugar Cane","Forest Plantation","Beach and Dune","Wetland","Forest Plantation","Wetland","Water","Temporary Crops (Herbaceas - Agricultura)","Sugar Cane","Beach and Dune","Water","Mining","Mining","Other Non Forest Natural Formation","Sugar Cane","Water","Forest Plantation"],["Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Salt flat","River, Lake and Ocean","Forest Formation","Forest Plantation","Other Non Forest Natural Formation","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Non Observed","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Non Observed","Mining","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Magrove","Other Non Forest Natural Formation","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Non Observed","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Savanna Formation","Magrove","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","Salt flat","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Mining","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Forest Plantation","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Non Observed","Mining","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Water","Non Observed","Salt flat","River, Lake and Ocean","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Other Non Forest Natural Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Non Observed","Mining","Salt flat","River, Lake and Ocean","Pasture","Urban Infrastructure","Mining","River, Lake and Ocean","Wetland","Other Non Forest Natural Formation","Urban Infrastructure","Non Observed","Pasture","Mining","Pasture","Beach and Dune","Wetland","Salt flat","Non Observed","Beach and Dune","Mining","Sugar Cane","Sugar Cane","Sugar Cane","Sugar Cane","Forest Plantation","Sugar Cane","Sugar Cane","Mosaic of Agriculture and Pasture","Sugar Cane","Sugar Cane","Savanna Formation","Sugar Cane","Forest Formation","Pasture","Temporary Crops (Herbaceas - Agricultura)","Other Non Vegetated Area","Forest Plantation","Forest Plantation","Savanna Formation","Grassland (Pastizal, Formación Herbácea)","River, Lake and Ocean","Savanna Formation","Sugar Cane","Sugar Cane","Temporary Crops (Herbaceas - Agricultura)","Urban Infrastructure","Non Observed","Mining","Pasture","Other Non Forest Natural Formation","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Forest Plantation","Wetland","Sugar Cane","Temporary Crops (Herbaceas - Agricultura)","Water","Wetland","Water","Beach and Dune","Wetland","Water","Sugar Cane","Forest Plantation","Mining","Sugar Cane"],["remain","remain","remain","transformed","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","exclude","transformed","transformed","exclude","remain","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","exclude","exclude","transformed","transformed","exclude","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","exclude","exclude","transformed","exclude","exclude","exclude","exclude","exclude","exclude","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","exclude","exclude","remain","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","exclude","exclude","transformed","transformed","exclude","remain","remain","remain","transformed","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","exclude","exclude","transformed","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","water","water","water","water","water","water","water","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","water","water","water","water","water","water","water","water","water","water","water","water","water","water","water","water","water","exclude","exclude","exclude","exclude","exclude","water","water","water","exclude","exclude","transformed","transformed","exclude","exclude","exclude","exclude","transformed","transformed","exclude","exclude","exclude","transformed","exclude","exclude","exclude","water","transformed","exclude","transformed","exclude","exclude","exclude","exclude","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","exclude","exclude","exclude","exclude","transformed","exclude","transformed","water","exclude","exclude","exclude","water","exclude","exclude","transformed","exclude","water","exclude"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>class<\/th>\n      <th>from_class<\/th>\n      <th>to_class<\/th>\n      <th>reclass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":20,"autoWidth":true,"dom":"Blfrtip","buttons":["copy","csv","excel","pdf"],"columnDefs":[{"className":"dt-right","targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,20,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="transition-table-collection-6" class="section level4">
+<h4>Transition table collection 6</h4>
+<div id="htmlwidget-9075fe00f0447d26a614" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9075fe00f0447d26a614">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"4848\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[[0,3,4,5,11,12,15,21,23,24,30,32,33,300,303,304,305,309,311,312,315,321,323,324,325,330,332,333,339,341,346,348,400,403,404,405,409,411,412,415,421,423,424,425,430,432,433,439,440,441,500,503,504,505,511,512,515,523,524,532,533,900,903,909,911,912,915,924,1100,1103,1104,1105,1111,1112,1115,1121,1123,1124,1125,1130,1132,1133,1139,1140,1141,1200,1203,1204,1205,1209,1211,1212,1215,1221,1223,1224,1225,1230,1232,1233,1239,1240,1241,1500,1503,1504,1505,1509,1511,1512,1515,1520,1521,1523,1524,1525,1530,1532,1533,1539,1540,1541,1548,2011,2015,2020,2100,2103,2104,2111,2112,2115,2121,2124,2125,2130,2133,2139,2140,2141,2146,2300,2303,2304,2311,2312,2315,2323,2324,2332,2333,2400,2403,2404,2405,2411,2412,2415,2421,2423,2424,2425,2430,2432,2433,2441,2503,2504,2511,2512,2515,2521,2523,2524,2525,2530,2533,2539,2540,2541,3003,3004,3011,3012,3015,3021,3024,3025,3030,3033,3041,3200,3203,3204,3205,3211,3212,3215,3223,3224,3232,3233,3300,3303,3304,3305,3311,3312,3315,3321,3323,3324,3325,3330,3332,3333,3340,3341,3903,3904,3911,3912,3915,3921,3924,3925,3933,3939,3941,4003,4004,4011,4012,4015,4021,4025,4033,4040,4100,4103,4104,4105,4111,4112,4115,4121,4124,4125,4130,4133,4139,4141,4604,4615,4621,4646,4803,4812,4815,4848,9,41,48,340,446,448,904,1109,1248,1546,2004,2012,2021,2039,2305,2325,2341,2439,3009,3309,3339,3348,4109,4148,4603,4611,4612,4809,420,525,541,930,933,948,2120,2520,941,25,1120,1220,2109,2409,2505,4120,4123,530,2025,2041,3230,3920,4041,4804,4824,1246,2003,4140,4841,320,2500,3320,3909,2033,3000,2509,921,939,39,509,3048,4009,413,1513,2024,3005,3241,4833,1313,2148,2532,4039,4830,925,940,3940,4132,4839,3948,4821,1304,1315,20,905,3930,920,3900,2009,3039,1148,2000,3225,4024,2420,313,4811],["Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Non Observed","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Forest Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Savanna Formation","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Magrove","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Forest Plantation","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Wetland","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Grassland (Pastizal, Formación Herbácea)","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Pasture","Sugar Cane","Sugar Cane","Sugar Cane","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Beach and Dune","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Urban Infrastructure","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Other Non Vegetated Area","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Mining","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","Salt flat","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Soy Beans","Rice","Rice","Rice","Rice","Rice","Rice","Rice","Rice","Rice","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Mosaic of Crops","Coffe","Coffe","Coffe","Coffe","Other Perennial Crops","Other Perennial Crops","Other Perennial Crops","Other Perennial Crops","Non Observed","Non Observed","Non Observed","Forest Formation","Savanna Formation","Savanna Formation","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Sugar Cane","Sugar Cane","Sugar Cane","Sugar Cane","Beach and Dune","Beach and Dune","Beach and Dune","Urban Infrastructure","Mining","River, Lake and Ocean","River, Lake and Ocean","River, Lake and Ocean","Mosaic of Crops","Mosaic of Crops","Coffe","Coffe","Coffe","Other Perennial Crops","Savanna Formation","Magrove","Magrove","Forest Plantation","Forest Plantation","Forest Plantation","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","Forest Plantation","Non Observed","Wetland","Grassland (Pastizal, Formación Herbácea)","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Mosaic of Crops","Mosaic of Crops","Magrove","Sugar Cane","Sugar Cane","Salt flat","Soy Beans","Rice","Other Perennial Crops","Other Perennial Crops","Grassland (Pastizal, Formación Herbácea)","Sugar Cane","Mosaic of Crops","Other Perennial Crops","Forest Formation","Other Non Vegetated Area","River, Lake and Ocean","Soy Beans","Sugar Cane","Mining","Other Non Vegetated Area","Forest Plantation","Forest Plantation","Non Observed","Magrove","Mining","Rice","Savanna Formation","Pasture","Sugar Cane","Mining","Salt flat","Other Perennial Crops","Other Non Forest Natural Formation","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","Rice","Other Perennial Crops","Forest Plantation","Forest Plantation","Soy Beans","Mosaic of Crops","Other Perennial Crops","Soy Beans","Other Perennial Crops","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Non Observed","Forest Plantation","Soy Beans","Forest Plantation","Soy Beans","Sugar Cane","Mining","Wetland","Sugar Cane","Salt flat","Rice","Urban Infrastructure","Forest Formation","Other Perennial Crops"],["Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Mining","Salt flat","River, Lake and Ocean","Non Observed","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Soy Beans","Mosaic of Crops","Coffe","Other Perennial Crops","Non Observed","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Beach and Dune","Urban Infrastructure","Salt flat","River, Lake and Ocean","Non Observed","Forest Formation","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Urban Infrastructure","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Non Observed","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Non Observed","Forest Formation","Savanna Formation","Magrove","Forest Plantation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Sugar Cane","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Other Perennial Crops","Wetland","Pasture","Sugar Cane","Non Observed","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Mining","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Coffe","Non Observed","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Beach and Dune","Urban Infrastructure","Salt flat","River, Lake and Ocean","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Mosaic of Crops","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","River, Lake and Ocean","Soy Beans","Rice","Mosaic of Crops","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Mining","River, Lake and Ocean","Mosaic of Crops","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Beach and Dune","Urban Infrastructure","Salt flat","River, Lake and Ocean","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Beach and Dune","Urban Infrastructure","Other Non Vegetated Area","Mining","Salt flat","River, Lake and Ocean","Rice","Mosaic of Crops","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","River, Lake and Ocean","Soy Beans","Mosaic of Crops","Forest Formation","Savanna Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Other Non Vegetated Area","River, Lake and Ocean","Rice","Non Observed","Forest Formation","Savanna Formation","Magrove","Wetland","Grassland (Pastizal, Formación Herbácea)","Pasture","Mosaic of Agriculture and Pasture","Urban Infrastructure","Other Non Vegetated Area","Mining","River, Lake and Ocean","Soy Beans","Mosaic of Crops","Savanna Formation","Pasture","Mosaic of Agriculture and Pasture","Coffe","Forest Formation","Grassland (Pastizal, Formación Herbácea)","Pasture","Other Perennial Crops","Forest Plantation","Mosaic of Crops","Other Perennial Crops","Rice","Coffe","Other Perennial Crops","Savanna Formation","Forest Plantation","Other Perennial Crops","Coffe","Savanna Formation","Grassland (Pastizal, Formación Herbácea)","Mosaic of Agriculture and Pasture","Soy Beans","Magrove","Other Non Vegetated Area","Mosaic of Crops","Soy Beans","Forest Plantation","Forest Plantation","Soy Beans","Other Perennial Crops","Forest Plantation","Other Perennial Crops","Forest Formation","Wetland","Grassland (Pastizal, Formación Herbácea)","Forest Plantation","Sugar Cane","Other Non Vegetated Area","Mosaic of Crops","Mining","River, Lake and Ocean","Other Perennial Crops","Sugar Cane","Sugar Cane","Mosaic of Crops","Other Non Vegetated Area","Sugar Cane","Sugar Cane","Forest Plantation","Forest Plantation","Magrove","Sugar Cane","Beach and Dune","Mining","Other Non Vegetated Area","Mosaic of Crops","Mining","Sugar Cane","Mosaic of Crops","Savanna Formation","Urban Infrastructure","Coffe","Forest Formation","Rice","Mosaic of Crops","Sugar Cane","Non Observed","Sugar Cane","Forest Plantation","River, Lake and Ocean","Non Observed","Forest Plantation","Mosaic of Agriculture and Pasture","Soy Beans","Soy Beans","Forest Plantation","Other Perennial Crops","Forest Plantation","Other Non Forest Natural Formation","Other Non Forest Natural Formation","Urban Infrastructure","Magrove","Mosaic of Crops","River, Lake and Ocean","Other Non Forest Natural Formation","Other Perennial Crops","Salt flat","Soy Beans","Mining","Other Non Vegetated Area","Rice","Rice","Salt flat","Soy Beans","Other Perennial Crops","Mosaic of Agriculture and Pasture","Savanna Formation","Pasture","Sugar Cane","Magrove","Mining","Sugar Cane","Non Observed","Forest Plantation","Soy Beans","Other Perennial Crops","Non Observed","Other Non Vegetated Area","Urban Infrastructure","Sugar Cane","Other Non Forest Natural Formation","Wetland"],["exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","remain","remain","remain","transformed","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","transformed","exclude","transformed","transformed","transformed","transformed","exclude","remain","remain","remain","transformed","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","transformed","exclude","transformed","transformed","transformed","exclude","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","remain","remain","remain","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","transformed","exclude","transformed","transformed","transformed","exclude","remain","remain","remain","transformed","remain","remain","transformed","transformed","transformed","transformed","transformed","transformed","transformed","exclude","transformed","transformed","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","water","water","water","water","water","water","water","water","water","water","water","water","water","water","water","water","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","transformed","transformed","exclude","transformed","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","water","water","water","exclude","exclude","exclude","exclude","exclude","exclude","transformed","transformed","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","transformed","exclude","exclude","exclude","exclude","exclude","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","exclude","exclude","exclude","transformed","exclude","water","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","exclude","exclude","remain","exclude","exclude","exclude","exclude","exclude","remain","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","exclude","remain","transformed","exclude","exclude","exclude","exclude","exclude","exclude","exclude","transformed","exclude","exclude","exclude","exclude","remain","exclude"]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>class<\/th>\n      <th>from_class<\/th>\n      <th>to_class<\/th>\n      <th>reclass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":20,"autoWidth":true,"dom":"Blfrtip","buttons":["copy","csv","excel","pdf"],"columnDefs":[{"className":"dt-right","targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,20,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p>Cheers!</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Update_20221005_cache/**
+Update_20221005_files/**
+index_cache/**
+index_files/**
+images/**
