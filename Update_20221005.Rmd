@@ -150,7 +150,7 @@ After filtering out pixels in PAs and having less than 80% cover, the matching a
 
 In general, the matching analysis performed well. Further explanation can be found in the SI draft document for matching:
 
-https://docs.google.com/document/d/1TWO7DNBtaVaVz-APYbrcHKF55ObNhmby.
+https://drive.google.com/drive/folders/1XnbMm7hWlGEq3gJ3R-twCpxCN5gE7vjQ
 
 <br>
 
