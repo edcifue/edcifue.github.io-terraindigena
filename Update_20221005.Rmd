@@ -101,7 +101,7 @@ Layers from mapbiomas (collection 3 and 6) and relevant variables (ie, accessibi
 
 <br>
 
-$$ {Proportion\ of\ natural\ land} =  \frac{transformed + remain}{area}  $$
+$$ {Proportion\ of\ natural\ land} =  \frac{initial\ natural\ vegetation}{area}  $$
 <br>
 
 
@@ -161,7 +161,7 @@ Mapbiomas data were aggregated for each IL, its respective matched control and i
 
 <br>
 
-$$ {Percentage\ of\ natural\ vegetation\ loss} =  \frac{transformed} {transformed + remain} *100 $$
+$$ {Percentage\ of\ natural\ vegetation\ loss} =  \frac{transformed} {initial\ natural\ vegetation} *100 $$
 
 <br>
 
