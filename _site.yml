@@ -1,5 +1,5 @@
 name: "terraindigena"
-#output_dir: "docs"
+output_dir: "docs"
 navbar:
   title: "Indigenous Lands Brazil"
   left:
